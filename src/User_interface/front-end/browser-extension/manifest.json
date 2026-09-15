@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Phishing Checker",
+  "version": "1.0",
+
+  "permissions": ["activeTab", "scripting"],
+
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*",
+    "http://localhost:5000/*", "<all_urls>"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

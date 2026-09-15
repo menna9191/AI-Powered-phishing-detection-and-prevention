@@ -1,0 +1,1 @@
+Since Common Crawl dataset (file cdx-00000) is too big (6GB), the submission does not include it. The constructed dataset is preserved in data/final_dataset.csv.
